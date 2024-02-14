@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eigenvector Calculator</title>
+  <style>
+    /* Add CSS styling here */
+  </style>
+</head>
+
+<body>
+  <h2>Select an operation to perform</h2>
+  <label for="dropdown">Select an operation</label>
+  <select id="dropdown" onchange="storeSelection()">
+    <option value="None">None</option>
+    <option value="Add">Add Matrices</option>
+    <option value="Subtract">Subtract Matrices</option>
+    <option value="Multiply by Constant">Multiply Matrix by Constant</option>
+    <option value="Multiply by Matrix">Multiply Two Matrices</option>
+    <option value="Power">Raise Matrix to Power</option>
+    <option value="Transpose">Transpose</option>
+    <option value="Reduced Row-Echelon Form">Reduced Row-Echelon Form</option>
+    <option value="Kernel">Kernel</option>
+    <option value="Trace">Trace</option>
+    <option value="Inverse">Inverse</option>
+    <option value="Determinant">Determinant</option>
+    <option value="Characteristic Polynomial">Characteristic Polynomial</option>
+    <option value="Eigenvalues">Eigenvalues</option>
+    <option value="Eigenvectors">Eigenvectors</option>
+    <option value="Diagonalize">Diagonalize</option>
+  </select>
+
+  <p>Operation: <span id="selectedValue">None</span></p>
+
+  <body>Input rows and columns, then press 'Generate'</body>
+  <form id="matrix-setup">
+    <div id="setup-boxes">
+
+    </div>
+    <div id="setup-boxes-two">
+
+    </div>
+    <button type="submit">Generate</button>
+  </form>
+
+  <body>Enter in matrix data and press 'Submit'!</body>
+  <form id="matrix-form">
+    <div id="matrix-container">
+      <!-- Matrix grid will be dynamically generated here -->
+    </div>
+    <button type="submit">Submit</button>
+    <body></body>
+  </form>
+  <script src="scripts/test.js"></script>
+</body>
+
+</html>
